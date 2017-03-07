@@ -3,7 +3,7 @@ Bootstrap 4 Custom Post Types Slider Plugin does just what it says. It adds the 
 ##Example Code
 The example code is code that you can use in a theme to load the slider. This you can use if you just want to integrate the code into one of your theme's files.
 ## Page Template
-There is also the option to load this all as a page template. For that the file it is good to be bad file based on the WP (http://www.wpexplorer.com/wordpress-page-templates-plugin/)[XPlorer] code need to be adjusted. You will need to use the code in the example file and or code you use to display pages in your theme.
+There is also the option to load this all as a page template. For that the file it is good to be bad file based on the WP [XPlorer](http://www.wpexplorer.com/wordpress-page-templates-plugin/) code need to be adjusted. You will need to use the code in the example file and or code you use to display pages in your theme.
 #Cloning
 To download / clone this plugin just run the following from your plugins folder:
 
