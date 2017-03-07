@@ -63,4 +63,43 @@ function imagine_cpt_slider() {
 // Hook into the 'init' action
 add_action( 'init', 'imagine_cpt_slider', 0 );
 
+//* Page Template inclusion http://www.wpexplorer.com/wordpress-page-templates-plugin/ */
 }
+
+class PageTemplater {
+
+    /**
+     * A Unique Identifier
+     */
+     protected $plugin_slug;
+
+    /**
+     * A reference to an instance of this class.
+     */
+    private static $instance;
+
+    /**
+     * The array of templates that this plugin tracks.
+     */
+    protected $templates;
+
+
+    /**
+     * Returns an instance of this class. 
+     */
+    public static function get_instance() {
+
+            if( null == self::$instance ) {
+                    self::$instance = new PageTemplater();
+            } 
+
+            return self::$instance;
+
+    } 
+
+    /**
+     * Initializes the plugin by setting filters and administration functions.
+     */
+    private function __construct() {
+
+            $this->templates = array();
