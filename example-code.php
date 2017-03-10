@@ -1,5 +1,4 @@
-<div class="container">
-	<div class="row">
+<div class="container-fluid">
     <!-- Carousel -->
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:100%;">
       <!-- Indicators -->
@@ -49,8 +48,7 @@
           <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
     </div><!-- /carousel -->
-  </div><!-- end row -->
-  <?php endif; ?>
+	<?php endif; ?>
 </div> <!-- end container -->
 <?php the_content(); ?>
 <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
