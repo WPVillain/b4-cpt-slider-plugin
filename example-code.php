@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container-fluid b4-slider">
     <!-- Carousel -->
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:100%;">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin: auto;">
       <!-- Indicators -->
       <?php $the_slides_query_ol = new WP_Query('post_type=slider&showposts=3'); ?>
           <?php if ( $the_slides_query_ol->have_posts() ) : ?>
@@ -21,7 +21,7 @@
                 <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive responsive--full', 'title' => 'Feature image']); //the_post_thumbnail( 'full' ); ?>
                 <?php endif; ?>
                   <!-- Static Header -->
-                    <div class="header-text hidden-xs">
+                    <div class="header-text carousel-caption hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
                                 <?php if (get_the_title()) {?>
@@ -48,7 +48,5 @@
           <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
     </div><!-- /carousel -->
-	<?php endif; ?>
-</div> <!-- end container -->
-<?php the_content(); ?>
-<?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+  </div><!-- end row -->
+  <?php endif; ?>
