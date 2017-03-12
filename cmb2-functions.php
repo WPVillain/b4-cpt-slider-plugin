@@ -1,8 +1,10 @@
 <?php
 
 /*
+*
 * http://willthemoor.github.io/cmb2-metabox-generator/
-* CMB2 Custom fields to load a header, sub header text and CTA
+* CMB2 Custom fields to load a header, sub header and CTA. 
+* FYI: Text can be loaded from the Custom Post's regular WYIWYG Field
 *
 */
 
